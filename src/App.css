@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #212529;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.quote-button {
+  background: linear-gradient(90deg, #d90a2c 1.05%, #730000);
+  border-radius: 20px !important;
+  width: 135px;
+  height: 42px;
+  color: #fff !important;
+}
+
+.quote-button:hover {
+  transition: all 1s ease-in-out;
+  background: linear-gradient(90deg, #730000 1.05%, #d90a2c);
+}
+
+.hero {
+  height: calc(100vh - 64px);
+}
+
+.market {
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  letter-spacing: 5px;
+}
+
+.project {
+  -webkit-text-stroke: 2px #d90a2c;
+  color: transparent;
+  letter-spacing: 5px;
+}
+
+.section-info {
+  border-bottom: 1px solid #d90a2c;
+  color: #d90a2c;
+  padding-bottom: 1px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.header {
+  background-image: url("https://finibus-react.b-cdn.net/static/media/hero-bg.254f914a12e2b9d56de4.png");
+  background-size: cover;
+  background-position: 10%;
+}
+
+.service-card:hover .right-icon::before {
+  content: "_";
+  display: inline-block;
+  font-size: 37px;
+  position: absolute;
+  top: -29px;
+  left: -8px;
+  color: red;
+}
+
+.service-card:hover .right-icon {
+  transition: all 0.5s ease-in-out;
+  left: 15%;
+}
+
+#about-us,
+#portfolio,
+#description,
+#blog {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.bottom-image {
+  width: 100%;
+  height: 50%;
+}
+
+.top-image {
+  position: absolute;
+  top: -20%;
+  right: 0;
+}
+
+.CircularProgressbar-trail {
+  stroke: #212529 !important;
+}
+
+.CircularProgressbar-path {
+  stroke: #d90a2c !important;
+}
+
+.CircularProgressbar {
+  width: 25% !important;
+}
+
+.CircularProgressbar-text {
+  fill: #d90a2c !important;
+  font-size: 30px !important;
+}
+
+.about-team {
+  background-image: url("https://finibus-react.b-cdn.net/static/media/counter-bg.a32146107fb07d160e8f.png");
+  background-position: 50%;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.about-team::before {
+  background-color: #18191d;
+  border-radius: 30px;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.mini-form {
+  background-image: url("https://finibus-react.b-cdn.net/static/media/subscribe-bg.d854aa1efd88991f56c3.jpg");
+  background-position: 50%;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.mini-form::before {
+  background: linear-gradient(256.31deg, #480000 0.87%, #000 88.66%);
+  bottom: 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.9;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.community {
+  background-color: black;
+}
+
+.swiper-horizontal {
+  width: 100% !important;
+}
+
+.swiper-pagination-horizontal {
+  position: static !important;
+  margin-top: 40px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 15px !important;
+  height: 15px !important;
+  background-color: #d90a2c !important;
+}
+
+.portfolio-data {
+  z-index: 1;
+  transition: all 1s ease-in-out;
+}
+
+.portfolio-data:hover::before {
+  visibility: visible;
+}
+
+.portfolio-data::before {
+  background-image: url("https://finibus-react.b-cdn.net/static/media/portfolio-hover-bg.82b7ab1ec66301266fef.png");
+  background-size: cover;
+  content: "";
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  height: 100%;
+  opacity: 0.7;
+  visibility: hidden;
+}
+
+.video-box::before {
+  background-image: url("https://finibus-react.b-cdn.net/static/media/portfolio-hover-bg.82b7ab1ec66301266fef.png");
+  background-size: cover;
+  content: "";
+  background-position: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.play-now {
+  transform: translate(-50%, -50%);
+}
+
+.play-now:hover {
+  transition: all 0.7s ease-in-out;
+  cursor: pointer;
+  border: none;
+  background-color: #d90a2c;
+}
+
+.details {
+  position: relative;
+}
+
+.details::before {
+  content: "";
+  background-color: #d90a2c;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  opacity: 0.35;
+  position: absolute;
+  top: -10%;
+  left: -10px;
+}
+
+#lets-talk {
+  background-image: url("https://finibus-react.b-cdn.net/static/media/letstalk-bg.06c0e73cb9aa8528fc89.png");
+  background-position: 50%;
+  background-size: cover;
+  position: relative;
+}
+
+#lets-talk::before {
+  content: "";
+  background-color: #111215;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+#footer {
+  background-image: url("https://finibus-react.b-cdn.net/static/media/footer-bg.e510bdb09928c002fb10.png");
+  background-position: 50%;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.iconKeeper:hover {
+  animation: spin 1s linear;
+  background-color: #d90a2c !important;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#footer li {
+  position: relative;
+}
+
+#header li:hover {
+  transition: all 0.5s ease-in-out;
+  color: #d90a2c;
+}
+
+#footer li:hover,
+.dropdown-item:hover {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(10%);
+  color: #d90a2c;
+}
+
+#footer li:hover::before {
+  content: ".";
+  font-size: 80px;
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  right: 0;
+  bottom: 0;
+  line-height: 20px;
+}
+
+.icon-content:hover,
+.policy:hover,
+.different:hover {
+  color: #d90a2c;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+}
+
+.policy {
+  position: relative;
+}
+
+.policy::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  right: -14px;
+  height: 60%;
+  border-right: 1px solid #fff;
+}
+
+.service-parent:hover .service-child {
+  display: block !important;
+}
+
+.service-child {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  z-index: 1;
+  display: none !important;
+}
+
+.service-parent {
+  position: relative;
+  justify-content: center;
+  height: 50px;
+}
+
+.starter-page{
+  background-image: url('https://finibus-react.b-cdn.net/static/media/breadcrumbs-bg.1f4552f207572789dfbf.png');
+  background-position: 50%;
+  background-size: cover;
+}
+
+.sidebar{
+  animation: sidebarOpen;
+  animation-duration: 1s;
+}
+
+@keyframes sidebarOpen {
+  0%{
+    transform: translateX(-100px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+
+.close{
+  animation: close;
+  animation-duration: 1s;
+}
+
+@keyframes close {
+  0%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(-300px);
+  }
+}
